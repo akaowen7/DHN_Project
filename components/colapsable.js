@@ -17,6 +17,8 @@ const Button = (props) => {
   onClick={() => {
 		setIsOpen(!isOpen)
   }}>
+		{!isOpen && <i>Click to open</i>}
+		{isOpen && <i>Click to close</i>}
 		<h1>{title}</h1>
 		{isOpen && <div>{body}</div>}
   </motion.div>

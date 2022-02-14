@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 # What is this
 
-This is a project I made for my Digital Arts and the Humanities class. Given a very breif outline I put this togher. Its made with [Next.js](https://nextjs.org/) (which works on top of [React](https://reactjs.org/)) and with some other addons like [Framer](https://www.framer.com/)
+This is a project I made for my Digital Arts and the Humanities class. Given a very breif outline I put this together. Its made with [Next.js](https://nextjs.org/) (which works on top of [React](https://reactjs.org/)) and with some other addons like [Framer](https://www.framer.com/motion/)
 
 Basicaly this was all way more then I should have tried to do for this one project.
 
