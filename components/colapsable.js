@@ -6,8 +6,7 @@ const Button = (props) => {
 
   const { title, body } = props
 
-  const [isOpen, setIsOpen] = useState(false);
-	const [isActive, setIsActive] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const [hover] = [5]
 
   return <motion.div

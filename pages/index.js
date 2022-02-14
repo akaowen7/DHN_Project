@@ -1,10 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import NavButton from '../components/navbutton'
-import Colapsable from '../components/colapsable'
 import { motion } from '../node_modules/framer-motion';
 import { useState } from 'react';
+
+import NavButton from '../components/navbutton'
+import Colapsable from '../components/colapsable'
+import NavBar from '../components/navbar'
 
 import vote from "../assets/VotingHands.jpg";
 import graph from "../assets/ElectionResults.png";
@@ -14,14 +16,7 @@ export default function Home() {
   return (
     <html>
       <div className={styles.container}>
-        <div className={styles.navigator}>
-          <h1>The Fight For Single Transferable Vote</h1>
-          <div className={styles.navigatorbuttons}>
-          <NavButton text="About" link="https://www.youtube.com/channel/UC8ZvHJKfa1xhdMwB5k-7BLQ"/>
-          <NavButton text="Essay" link="https://www.youtube.com/channel/UC8ZvHJKfa1xhdMwB5k-7BLQ"/>
-          <NavButton text="Third Thing" link="https://www.youtube.com/channel/UC8ZvHJKfa1xhdMwB5k-7BLQ"/>
-          </div>
-        </div>
+        <NavBar/>
       </div>
 
       <div className={styles.main}>

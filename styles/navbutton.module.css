@@ -1,5 +1,5 @@
 .button {
-	color: rgb(226, 226, 226);
+	color: rgb(255, 255, 255);
 	font-weight: 400;
 	font-size: 1.8em;
 	padding: 0.6em 1em;
@@ -8,13 +8,17 @@
 	text-align: center;
 	cursor: pointer;
 	user-select: none;
-	background-color: rgb(83, 45, 74);
+	background-color: #916BBF;
 	border-radius: 20px;
 }
 
-@media screen and (max-aspect-ratio: 1/1) {
+.button a:hover{
+	text-decoration: none;
+}
+
+/* @media screen and (max-aspect-ratio: 1/1) {
 	.button {
 		font-size: 1.7em;
 		padding-left: 60vw;
 	}
-}
+} */

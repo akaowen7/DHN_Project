@@ -1,0 +1,23 @@
+.navigator {
+  background-color: #3D2C8D;
+  padding: .5rem 2rem;
+  margin: .3rem -2rem;
+}
+
+.navigator h1 {
+  font-size: 4em;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+}
+
+.navigatorbuttons{
+  padding: 0rem 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.navigatorbuttons > * {
+  flex: 1 1 0;
+}

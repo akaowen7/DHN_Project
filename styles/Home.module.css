@@ -1,36 +1,12 @@
 .container {
-  background-color: #161627;
+  background-color: #1C0C5B;
   padding: 2rem;
   flex-basis: 50%;
   flex-grow: 0;
 }
 
-.navigator {
-  background-color: #53759b;
-  padding: .5rem 2rem;
-  margin: .3rem -2rem;
-}
-
-.navigator h1 {
-  font-size: 4em;
-  font-weight: 300;
-  color: #dffbfb;
-  text-align: center;
-}
-
-.navigatorbuttons{
-  padding: 0rem 10rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.navigatorbuttons > * {
-  flex: 1 1 0;
-}
-
 .main {
-  background-color: #161627;
+  background-color: #1C0C5B;
   flex: 1;
   display: flex;
   flex-direction: row;
@@ -92,18 +68,23 @@
   justify-content: center;
   margin: 3rem -2rem;
   padding: 1rem;
-  background-color: #53759b;
+  background-color: #3D2C8D;
 }
 
 .footer p{
   text-align: center;
   font-size: 1em;
   margin: .4rem 4rem;
-  color: #000000;
+  color: #ffffff;
 }
 
 .footer a{
   font-size: 1em;
   margin: .4rem 4rem;
-  color: #a8fbff;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer a:hover{
+  color: #b8d6ff;
 }
