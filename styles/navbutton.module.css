@@ -1,0 +1,19 @@
+.button {
+	color: rgb(226, 226, 226);
+	font-weight: 400;
+	font-size: 1.8em;
+	padding: 0.6em 1em;
+	margin: 0.5em;
+	text-decoration: none;
+	justify-content: center;
+	cursor: pointer;
+	user-select: none;
+	background-color: rgb(83, 45, 74);
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+	.button {
+		font-size: 1.7em;
+		padding-left: 60vw;
+	}
+}

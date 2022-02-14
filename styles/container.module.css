@@ -1,0 +1,21 @@
+.container{
+	background-color: #e9e9f5;
+	padding: 2rem 4rem;
+	margin: 2rem;
+	border-radius: 25px;
+	text-decoration: none;
+	justify-content: center;
+	user-select: none;
+}
+
+.container h1{
+	font-size: 3em;
+	font-weight: 400;
+	color: #0b206f;
+}
+
+.container p{
+	font-size: 1.3em;
+	font-weight: 300;
+	color: #000000;
+}
