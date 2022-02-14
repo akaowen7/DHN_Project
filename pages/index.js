@@ -15,11 +15,11 @@ export default function Home() {
     <html>
       <div className={styles.container}>
         <div className={styles.navigator}>
-          <h1>The Single Transverable Vote System</h1>
+          <h1>The Fight For Single Transferable Vote</h1>
           <div className={styles.navigatorbuttons}>
-          <NavButton text="Youtube" link="https://www.youtube.com/channel/UC8ZvHJKfa1xhdMwB5k-7BLQ"/>
-          <NavButton text="Youtube" link="https://www.youtube.com/channel/UC8ZvHJKfa1xhdMwB5k-7BLQ"/>
-          <NavButton text="Youtube" link="https://www.youtube.com/channel/UC8ZvHJKfa1xhdMwB5k-7BLQ"/>
+          <NavButton text="About" link="https://www.youtube.com/channel/UC8ZvHJKfa1xhdMwB5k-7BLQ"/>
+          <NavButton text="Essay" link="https://www.youtube.com/channel/UC8ZvHJKfa1xhdMwB5k-7BLQ"/>
+          <NavButton text="Third Thing" link="https://www.youtube.com/channel/UC8ZvHJKfa1xhdMwB5k-7BLQ"/>
           </div>
         </div>
       </div>
