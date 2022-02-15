@@ -19,3 +19,12 @@
 	font-weight: 300;
 	color: #000000;
 }
+
+.container i{
+	text-align: right;
+	position: absolute;
+	font-style: italic;
+	font-size: 1em;
+	font-weight: 200;
+	color: #37223e;
+  }

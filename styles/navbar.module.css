@@ -21,3 +21,31 @@
 .navigatorbuttons > * {
   flex: 1 1 0;
 }
+
+.footer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  margin: 3rem -2rem;
+  padding: 1rem;
+  background-color: #3D2C8D;
+}
+
+.footer p{
+  text-align: center;
+  font-size: 1em;
+  margin: .4rem 4rem;
+  color: #ffffff;
+}
+
+.footer a{
+  font-size: 1em;
+  margin: .4rem 4rem;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer a:hover{
+  color: #b8d6ff;
+}

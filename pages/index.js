@@ -7,6 +7,7 @@ import { useState } from 'react';
 import NavButton from '../components/navbutton'
 import Colapsable from '../components/colapsable'
 import NavBar from '../components/navbar'
+import Footer from '../components/footer'
 
 import vote from "../assets/VotingHands.jpg";
 import graph from "../assets/ElectionResults.png";
@@ -37,7 +38,7 @@ export default function Home() {
 
       <div className={styles.main}>
         <div className={styles.container} style={{flexBasis: "100%", padding: "2rem 8rem"}}>
-          <Colapsable title="The Problem?" body={(
+          <Colapsable title="The Problem?" open={true} body={(
             <div>
               <p>
               Canada uses the <a href="https://en.wikipedia.org/wiki/First-past-the-post_voting">First Past the Post </a> 
@@ -67,7 +68,7 @@ export default function Home() {
               <p>This sucks.</p>
             </div>
           )}/>
-          <Colapsable title="The Soultion?" body={(
+          <Colapsable title="The Soultion?" open={true} body={(
             <div>
               <p>
               Simple: <a href="https://en.wikipedia.org/wiki/Single_transferable_vote">Single Transferable Vote </a>. Its
@@ -115,16 +116,7 @@ export default function Home() {
       </div>
 
       <div className={styles.main}>  
-        <footer className={styles.footer}>
-          <div style={{display: "flex", flexDirection: "row", justifyContent: "center"}}>
-            <a href='https://www.youtube.com/channel/'>One Thing</a>
-            <a href='https://www.youtube.com/channel/UC8ZvHJKfa1xhdMwB5k-7BLQ'>Two Thing</a>
-            <a href='https://www.youtube.com/channel/UC8ZvHJKf'>Three Thing</a>
-          </div>
-          <div>
-            <p>Reid Tull 2022</p>
-          </div>
-        </footer>
+        <Footer/>
       </div>
     </html>
   )

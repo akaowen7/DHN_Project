@@ -4,9 +4,9 @@ import { motion } from '../node_modules/framer-motion';
 
 const Button = (props) => {
 
-  const { title, body } = props
+  const { title, body, open} = props
 
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(open);
   const [hover] = [5]
 
   return <motion.div
