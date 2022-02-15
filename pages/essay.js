@@ -17,7 +17,10 @@ export default function Home() {
       </div>
 
       <div className={styles.main} style={{flexDirection: "column"}}>
-				<div className={styles.container}>
+				<motion.div
+          initial={{opacity: 0, x: -20}}
+          animate={{opacity: 1, x: 0}}
+					className={styles.container}>
 					<Colapsable title="What is this?" open={false} body={(
 						<div>
 							<p>
@@ -28,9 +31,12 @@ export default function Home() {
 							</p>
 					</div>
           )}/>
-				</div>
+				</motion.div>
 				<div className={styles.container}>
-					<div className={styles.container2}>
+					<motion.div
+          initial={{opacity: 0, y: 20}}
+          animate={{opacity: 1, y: 0}} 
+					className={styles.container2}>
 						<h1>Why Single Transferable Vote is a Good Alternative for Canadas Current Voting System</h1>
 
 						<p>Democracy is one of the great achievements of human civilization, and more specifically modern human society. Democracy states that the power that governs people is controlled by the people, creating a system that will over time conform to the will of the people. This arguably the most equal way to split power, however it is not practical to directly allow people to decide on legislation on a country sized scale. The solution to this problem is representative democracy, however this too has an issue; how do you decide on the people to represent parts of a population? Currently, Canada uses a First Past the Post (FPTP) voting system for federal elections, where in each riding the candidate with the most votes is awarded the seat. However, this system has many flaws that can make it very unrepresentative in certain situations. Canadas electoral system should be changed to a Single Transferable Vote system because it has minimal issues, compared to the current system of FPTP it is superior, and its ability to represent a population better leads to other advantages.</p>
@@ -62,7 +68,7 @@ export default function Home() {
 						<p>Canada has an issue with its representation. The voting system we currently use, First Past the Post, doesn't represent the population fully because how it elects people in each riding. Given common situations FPTP can wildly be unrepresentative of a population, and this is evident in the last two Canadian federal elections. Enter Single Transferable Vote. Because of its structure of larger ridings, ranked voting, and multiple candidates per riding, it is more representative then FPTP. It also excels in other categories when compared to its contemporaries: it removes issues of gerrymandering because of how each riding functions. STV removes the incentive for negative campaigning and generally encourages parties to work together instead of against each other. Plus, it removes the spoiler effect, allowing people to vote how they would really like. These all, while great on their own, also increase voter turnout, as people are more inclined to participate thanks to the less negative stigma, and the ability to vote as they please. STV however does have 2 issues main issues that are brought up whenever discussing it, both of which are not dealbreakers. Saying STV will create a poorer government is just not true, and the complexity and too many options issues have two answers: 1. Its not really that complex and 2. People will gain more interest in the political system as seen above. Apart from being generally better, the representation that STV provides can be beneficial in other aspects such as with women and their representation in government, and income inequality, where because of the improved representation of lower classes there is less of an income gap.</p>
 
 						<p>For too long we have accepted compromise in our democracy, we have made excuses for why we cannot include certain people and settled for being good enough. Canada strives to be one of the best countries in the world on all accounts, and we are not doing bad. There are issues though, and one of those is with our democracy. If the true north wants to continue to consider itself the “strong” and “free”, then we need to make reform to our voting system, starting with the Single Transferable Vote.</p>
-					</div>
+					</motion.div>
 				</div>
 				<div className={styles.container}>
 					<div className={styles.container2}>

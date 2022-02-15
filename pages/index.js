@@ -15,25 +15,34 @@ import graph from "../assets/ElectionResults.png";
 export default function Home() {
 
   return (
-    <html>
+    <motion.html>
       <div className={styles.container}>
-        <NavBar/>
+        <div>
+          <NavBar/>
+        </div>
       </div>
 
-      <div className={styles.main}>
+      <div
+      className={styles.main}>
         <div className={styles.container}>
-          <div className={styles.container2}>
+          <motion.div
+          initial={{opacity: 0, x: -20}}
+          animate={{opacity: 1, x: 0}}
+          className={styles.container2}>
             <h1>What Do We Do</h1>
             <p>
               We look to bring to the attention of more people the issues with 
               many of the current voting systems in First World Countries
               and how they can be changed for the better.
             </p>
-          </div>
+          </motion.div>
         </div>  
-        <div className={styles.container}>
+        <motion.div
+          initial={{opacity: 0, x: 20}}
+          animate={{opacity: 1, x: 0}}
+          className={styles.container}>
           <Image src={vote} alt="People voting" className={styles.Image}/>
-        </div>  
+        </motion.div>  
       </div>
 
       <div className={styles.main}>
@@ -118,6 +127,6 @@ export default function Home() {
       <div className={styles.main}>  
         <Footer/>
       </div>
-    </html>
+    </motion.html>
   )
 }

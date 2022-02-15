@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { motion } from '../node_modules/framer-motion';
+import { AnimatePresence, motion } from '../node_modules/framer-motion';
 import { useState } from 'react';
 
 import NavBar from '../components/navbar'
@@ -17,7 +17,10 @@ export default function Home() {
 
       <div className={styles.main}>
 				<div className={styles.container}>
-					<div className={styles.container2}>
+					<motion.div
+          initial={{opacity: 0, x: -20}}
+          animate={{opacity: 1, x: 0}}
+					className={styles.container2}>
 						<h1>About</h1>
 						<p>
 							This is an about page!
@@ -31,10 +34,10 @@ export default function Home() {
 							a part of a Digital Arts and the Humanities Assignment, and also because we are 
 							passionate about voting reform!
 						</p>
-					</div>
+					</motion.div>
 				</div>
       </div>
-  
+
 			<div className={styles.main}>  
         <Footer/>
       </div>
